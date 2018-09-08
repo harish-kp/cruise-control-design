@@ -1,0 +1,73 @@
+[System]
+Name='new_rules_gauss_mf'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=25
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='error'
+Range=[-60 60]
+NumMFs=5
+MF1='LN':'trapmf',[-103.2 -64.8 -51.2 -32.8]
+MF2='MN':'gaussmf',[6.625 -27.8]
+MF3='LP':'gaussmf',[8.833 59.6]
+MF4='MP':'gaussmf',[8.663 23.8]
+MF5='zero':'gaussmf',[3.567 -4.2]
+
+[Input2]
+Name='derror'
+Range=[-60 60]
+NumMFs=5
+MF1='LN':'trapmf',[-103.2 -64.8 -58 -32.8]
+MF2='MN':'gaussmf',[13.42 -31.8]
+MF3='MP':'gaussmf',[12.06 31.8]
+MF4='LP':'gaussmf',[14.95 60.4]
+MF5='zero':'gaussmf',[13.59 0]
+
+[Output1]
+Name='output1'
+Range=[-25000 25000]
+NumMFs=9
+MF1='AMN':'gaussmf',[2840 -12410]
+MF2='ASP':'gaussmf',[2654 6250]
+MF3='ANO':'gaussmf',[2389 0]
+MF4='AVHN':'gaussmf',[3291 -25130]
+MF5='AHN':'gaussmf',[2654 -18750]
+MF6='ASN':'gaussmf',[2442 -5688]
+MF7='AHP':'gaussmf',[2654 18750]
+MF8='AMP':'gaussmf',[2681 12470]
+MF9='AVHP':'gaussmf',[2654 25000]
+
+[Rules]
+1 1, 8 (1) : 1
+1 2, 2 (1) : 1
+1 5, 6 (1) : 1
+1 3, 5 (1) : 1
+1 4, 4 (1) : 1
+2 1, 7 (1) : 1
+2 2, 8 (1) : 1
+2 5, 6 (1) : 1
+2 3, 5 (1) : 1
+2 4, 4 (1) : 1
+5 1, 7 (1) : 1
+5 2, 8 (1) : 1
+5 5, 3 (1) : 1
+5 3, 1 (1) : 1
+5 4, 5 (1) : 1
+4 1, 9 (1) : 1
+4 2, 7 (1) : 1
+4 5, 2 (1) : 1
+4 3, 1 (1) : 1
+4 4, 5 (1) : 1
+3 1, 9 (1) : 1
+3 2, 9 (1) : 1
+3 5, 2 (1) : 1
+3 3, 6 (1) : 1
+3 4, 1 (1) : 1
