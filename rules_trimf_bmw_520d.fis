@@ -13,13 +13,13 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='error'
-Range=[-60 60]
+Range=[-100 100]
 NumMFs=5
-MF1='LN':'trapmf',[-103.2 -64.8 -51.2 -32.8]
-MF2='MN':'trimf',[-40 -28 -12]
-MF3='LP':'trimf',[32 60 80]
-MF4='MP':'trimf',[0 24 44]
-MF5='zero':'trimf',[-16 -4 4]
+MF1='LN':'trapmf',[-172 -108 -85.33 -54.67]
+MF2='MN':'trimf',[-66.67 -46.67 -20]
+MF3='LP':'trimf',[53.33 100 133.3]
+MF4='MP':'trimf',[0 40 73.33]
+MF5='zero':'trimf',[-26.67 -6.667 6.667]
 
 [Input2]
 Name='derror'
@@ -33,17 +33,17 @@ MF5='zero':'trimf',[-32 0 32]
 
 [Output1]
 Name='output1'
-Range=[-20000 20000]
+Range=[-17000 17000]
 NumMFs=9
-MF1='AMN':'trimf',[-14000 -10000 -4500]
-MF2='ASP':'trimf',[0 5000 10000]
-MF3='ANO':'trimf',[-4500 0 4500]
-MF4='AVHN':'trimf',[-28000 -20000 -14000]
-MF5='AHN':'trimf',[-20000 -15000 -10000]
-MF6='ASN':'trimf',[-10000 -4500 0]
-MF7='AHP':'trimf',[10000 15000 20000]
-MF8='AMP':'trimf',[4500 10000 15000]
-MF9='AVHP':'trimf',[15000 20000 25000]
+MF1='AMN':'trimf',[-11900 -8500 -3825]
+MF2='ASP':'trimf',[0 4250 8500]
+MF3='ANO':'trimf',[-3825 0 3825]
+MF4='AVHN':'trimf',[-23800 -17000 -11900]
+MF5='AHN':'trimf',[-17000 -12750 -8500]
+MF6='ASN':'trimf',[-8500 -3825 0]
+MF7='AHP':'trimf',[8500 12750 17000]
+MF8='AMP':'trimf',[3825 8500 12750]
+MF9='AVHP':'trimf',[12750 17000 21250]
 
 [Rules]
 1 1, 8 (1) : 1
