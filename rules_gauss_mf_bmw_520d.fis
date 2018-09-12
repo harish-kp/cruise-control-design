@@ -13,13 +13,13 @@ DefuzzMethod='centroid'
 
 [Input1]
 Name='error'
-Range=[-60 60]
+Range=[-110 110]
 NumMFs=5
-MF1='LN':'trapmf',[-103.2 -64.8 -51.2 -32.8]
-MF2='MN':'gaussmf',[6.625 -27.8]
-MF3='LP':'gaussmf',[8.833 59.6]
-MF4='MP':'gaussmf',[8.663 23.8]
-MF5='zero':'gaussmf',[3.567 -4.2]
+MF1='LN':'trapmf',[-189.2 -118.8 -93.87 -60.13]
+MF2='MN':'gaussmf',[12.15 -50.97]
+MF3='LP':'gaussmf',[16.19 109.3]
+MF4='MP':'gaussmf',[15.88 43.63]
+MF5='zero':'gaussmf',[6.54 -7.7]
 
 [Input2]
 Name='derror'
@@ -33,17 +33,17 @@ MF5='zero':'gaussmf',[13.59 0]
 
 [Output1]
 Name='output1'
-Range=[-20000 20000]
+Range=[-17000 17000]
 NumMFs=9
-MF1='AMN':'gaussmf',[2272 -9928]
-MF2='ASP':'gaussmf',[2123 5000]
-MF3='ANO':'gaussmf',[1911 0]
-MF4='AVHN':'gaussmf',[2633 -20100]
-MF5='AHN':'gaussmf',[2123 -15000]
-MF6='ASN':'gaussmf',[1954 -4550]
-MF7='AHP':'gaussmf',[2123 15000]
-MF8='AMP':'gaussmf',[2145 9976]
-MF9='AVHP':'gaussmf',[2123 20000]
+MF1='AMN':'gaussmf',[1932 -8438]
+MF2='ASP':'gaussmf',[1805 4250]
+MF3='ANO':'gaussmf',[1625 0]
+MF4='AVHN':'gaussmf',[2239 -17090]
+MF5='AHN':'gaussmf',[1805 -12750]
+MF6='ASN':'gaussmf',[1662 -3868]
+MF7='AHP':'gaussmf',[1805 12750]
+MF8='AMP':'gaussmf',[1823 8479]
+MF9='AVHP':'gaussmf',[1805 17000]
 
 [Rules]
 1 1, 8 (1) : 1
