@@ -1,5 +1,5 @@
 [System]
-Name='rules_trimf_audiA4_2point0TDI'
+Name='rules_trimf_bmw_520d_nonlinear'
 Type='mamdani'
 Version=2.0
 NumInputs=2
@@ -33,17 +33,17 @@ MF5='zero':'trimf',[-32 0 32]
 
 [Output1]
 Name='output1'
-Range=[-15000 15000]
+Range=[-27000 27000]
 NumMFs=9
-MF1='AMN':'trimf',[-10500 -7500 -3375]
-MF2='ASP':'trimf',[0 3750 7500]
-MF3='ANO':'trimf',[-3375 0 3375]
-MF4='AVHN':'trimf',[-21000 -15000 -10500]
-MF5='AHN':'trimf',[-15000 -11250 -7500]
-MF6='ASN':'trimf',[-7500 -3375 0]
-MF7='AHP':'trimf',[7500 11250 15000]
-MF8='AMP':'trimf',[3375 7500 11250]
-MF9='AVHP':'trimf',[11250 15000 18750]
+MF1='AMN':'trimf',[-18900 -13500 -6075]
+MF2='ASP':'trimf',[0 6750 13500]
+MF3='ANO':'trimf',[-6075 0 6075]
+MF4='AVHN':'trimf',[-37800 -27000 -18900]
+MF5='AHN':'trimf',[-27000 -20250 -13500]
+MF6='ASN':'trimf',[-13500 -6075 0]
+MF7='AHP':'trimf',[13500 20250 27000]
+MF8='AMP':'trimf',[6075 13500 20250]
+MF9='AVHP':'trimf',[20250 27000 33750]
 
 [Rules]
 1 1, 8 (1) : 1

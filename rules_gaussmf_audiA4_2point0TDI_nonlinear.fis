@@ -1,5 +1,5 @@
 [System]
-Name='rules_trimf_audiA4_2point0TDI'
+Name='rules_gaussmf_audiA4_2point0TDI_nonlinear'
 Type='mamdani'
 Version=2.0
 NumInputs=2
@@ -16,34 +16,34 @@ Name='error'
 Range=[-100 100]
 NumMFs=5
 MF1='LN':'trapmf',[-172 -108 -85.33 -54.67]
-MF2='MN':'trimf',[-66.67 -46.67 -20]
-MF3='LP':'trimf',[53.33 100 133.3]
-MF4='MP':'trimf',[0 40 73.33]
-MF5='zero':'trimf',[-26.67 -6.667 6.667]
+MF2='MN':'gaussmf',[11.04 -46.33]
+MF3='LP':'gaussmf',[14.72 99.33]
+MF4='MP':'gaussmf',[14.44 39.67]
+MF5='zero':'gaussmf',[5.945 -7]
 
 [Input2]
 Name='derror'
 Range=[-60 60]
 NumMFs=5
 MF1='LN':'trapmf',[-103.2 -64.8 -58 -32.8]
-MF2='MN':'trimf',[-60 -32 0]
-MF3='MP':'trimf',[0 32 60]
-MF4='LP':'trimf',[32 60 96]
-MF5='zero':'trimf',[-32 0 32]
+MF2='MN':'gaussmf',[13.42 -31.8]
+MF3='MP':'gaussmf',[12.06 31.8]
+MF4='LP':'gaussmf',[14.95 60.4]
+MF5='zero':'gaussmf',[13.59 0]
 
 [Output1]
 Name='output1'
-Range=[-15000 15000]
+Range=[-26000 26000]
 NumMFs=9
-MF1='AMN':'trimf',[-10500 -7500 -3375]
-MF2='ASP':'trimf',[0 3750 7500]
-MF3='ANO':'trimf',[-3375 0 3375]
-MF4='AVHN':'trimf',[-21000 -15000 -10500]
-MF5='AHN':'trimf',[-15000 -11250 -7500]
-MF6='ASN':'trimf',[-7500 -3375 0]
-MF7='AHP':'trimf',[7500 11250 15000]
-MF8='AMP':'trimf',[3375 7500 11250]
-MF9='AVHP':'trimf',[11250 15000 18750]
+MF1='AMN':'gaussmf',[2954 -12900]
+MF2='ASP':'gaussmf',[2759 6500]
+MF3='ANO':'gaussmf',[2485 0]
+MF4='AVHN':'gaussmf',[3424 -26130]
+MF5='AHN':'gaussmf',[2759 -19530]
+MF6='ASN':'gaussmf',[2542 -5917]
+MF7='AHP':'gaussmf',[2759 19530]
+MF8='AMP':'gaussmf',[2791 12970]
+MF9='AVHP':'gaussmf',[2759 26000]
 
 [Rules]
 1 1, 8 (1) : 1
