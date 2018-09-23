@@ -6,10 +6,10 @@ The necessity of cruise control is to improve the driving experience, reduce fat
 
 System Modelling 
 
-mv ̇+1⁄2 AρC_d v^2  = u + d
+/[mv ̇+1⁄2 AρC_d v^2  = u + d]/
 Analyzing the given equation gives us an insight that the equation has non-linearity induced by the v^2 which in turn produces uncertainty over the system responses. The system is linearized over a specific point v^*. Here the system is linearized over the point 50 kmph (13.88 ms-1).
 The first step in achieving cruise control is to linearize and compute transfer function of the plant which generates the following equation,
-δv(s)/(δu(s))=  (1⁄m)/(s+ ((AC_d ρv^*)⁄m) )
+/[δv(s)/(δu(s))=  (1⁄m)/(s+ ((AC_d ρv^*)⁄m) )]/
 The parameters chosen for each of the cars are tabulated below,
 Cars / Parameters	AC_d m2	v^* ms-1	ρ	m kg
 Average car	0.23	13.88 	1.1839	1000
